@@ -1,4 +1,4 @@
-const API_ORIGIN = "http://localhost:5000";
+const API_ORIGIN = import.meta.env.VITE_API_BASE_URL || "http://localhost:5000";
 const UPLOADS_BASE_URL = `${API_ORIGIN}/uploads/products`;
 const NO_IMAGE_SRC = `${UPLOADS_BASE_URL}/no-image.png`;
 
